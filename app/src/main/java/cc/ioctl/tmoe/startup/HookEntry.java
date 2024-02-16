@@ -13,6 +13,7 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage;
 public class HookEntry implements IXposedHookLoadPackage, IXposedHookZygoteInit {
 
     private static final List<String> TELEGRAM_CLIENT_PACKAGE_NAME_LIST = List.of(
+            "tw.nekomimi.nekogram",
             "org.telegram.messenger",
             "org.telegram.messenger.beta",
             "org.telegram.plus",
